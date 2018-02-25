@@ -13455,6 +13455,7 @@ OMX_ERRORTYPE omx_vdec::enable_adaptive_playback(unsigned long nMaxFrameWidth,
 OMX_ERRORTYPE omx_vdec::describeColorFormat(OMX_PTR pParam) {
 
 #ifndef FLEXYUV_SUPPORTED
+    (void)pParam;
     return OMX_ErrorUndefined;
 #else
 
